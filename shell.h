@@ -41,6 +41,11 @@ char *c_delim_check(char *str, int d);
 int c_get_char(void);
 int str_int(char *s);
 char *int_str(int num);
+char *concat_n(char *dest, char *src, int bytes);
+int cmp_n(const char *str1, const char *str2, int n);
+char *copy_n(char *dest, char *src, int bytes);
+int is_digit(int ch);
+char *find_char(char *str, char ch);
 
 
 #endif
