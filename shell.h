@@ -36,5 +36,11 @@ int cmp_str(char *str1, char *str2);
 int len_str(char *str);
 char *concat_str(char *dst, char *src);
 char *dup_str(const char *src);
+char *c_token(char *str, char *delim);
+char *c_delim_check(char *str, int d);
+int c_get_char(void);
+int str_int(char *s);
+char *int_str(int num);
+
 
 #endif

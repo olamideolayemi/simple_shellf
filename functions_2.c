@@ -1,6 +1,7 @@
 #include "custom_shell.h"
 
-/** c_token - splits a string into words using delimiters
+/**
+ * c_token - splits a string into words using delimiters
  * @str: string to tokenize
  * @delim: a string of delimiters
  * Return: array of strings (Success)
@@ -59,17 +60,17 @@ int c_get_char(void)
 	char ch;
 
 	if (read(0, &ch, 1) == 1)
-		return (int)ch;
+		return ((int)ch);
 	else
 		return (EOF);
 }
 
 /**
- * str-int - converts a string to an integer
+ * str_int - converts a string to an integer
  * @s: string to be converted
  * Return: integer converted
  */
-int str-int(char *s)
+int str_int(char *s)
 {
 	int i = 0, n = 0, len = 0, f = 0, d = 0;
 
@@ -105,7 +106,7 @@ int str-int(char *s)
  * @num: integer to be converted
  * Return: an allocated string containing the integer
  */
-char *int_str(int sum)
+char *int_str(int num)
 {
 	int i, t = num;
 	int len = (num == 0) ? 1 : 0;
