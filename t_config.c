@@ -9,7 +9,7 @@ void init_term(terminal_cfg *config)
 	struct termios new_cfg;
 
 	tcgetattr(STDIN_FILENO, &(config->original));
-	
+
 	new_cfg.c_lflag &= ~ICANON;
 
 	new_cfg.c_lflag &= ~ECHO;
